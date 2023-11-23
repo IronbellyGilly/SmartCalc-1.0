@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CreditCalc</class>
+ <widget class="QDialog" name="CreditCalc">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>468</width>
+    <height>355</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Credit Calculator</string>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>430</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="percent">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+ background-color:gray;
+ color: white;
+ border-style: solid;
+ border-width:1px;
+ border-radius:7px;
+ border-color: white;
+ max-width: 215px;
+ max-height:20px;
+}</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>Переплата по кредиту:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="sum_of_credit">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+ background-color:gray;
+ color: white;
+ border-style: solid;
+ border-width:1px;
+ border-radius:7px;
+ border-color: white;
+ max-width: 215px;
+ max-height:20px;
+}</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0" colspan="2">
+     <widget class="QPushButton" name="calculate_credit">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+background-color: rgb(98, 97, 98);
+ color: white;;
+ border-radius:10px;
+ max-height:30px;
+ min-height:30px;
+}
+
+QPushButton:pressed {
+    padding-top: 3px;
+    padding-left: 3px;
+    background-color: rgb(65, 65, 66)
+}</string>
+      </property>
+      <property name="text">
+       <string>Рассчитать кредит</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>Ежемесячный платеж:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Срок кредита(месяцев):</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Cумма кредита:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="credit_term">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+ background-color:gray;
+ color: white;
+ border-style: solid;
+ border-width:1px;
+ border-radius:7px;
+ border-color: white;
+ max-width: 215px;
+ max-height:20px;
+}</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="0">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>Общая выплата:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Процентная ставка:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Тип ежемесячных платажей:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QRadioButton" name="diff">
+      <property name="text">
+       <string>Дифференцированный</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QRadioButton" name="ann">
+      <property name="text">
+       <string>Aннуитетный</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QLabel" name="payment">
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+ background-color:gray;
+ color: white;
+ border-style: solid;
+ border-width:1px;
+ border-radius:7px;
+ border-color: white;
+ max-width: 215px;
+ max-height:20px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1">
+     <widget class="QLabel" name="overpayment">
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+ background-color:gray;
+ color: white;
+ border-style: solid;
+ border-width:1px;
+ border-radius:7px;
+ border-color: white;
+ max-width: 215px;
+ max-height:20px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="1">
+     <widget class="QLabel" name="total_payment">
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+ background-color:gray;
+ color: white;
+ border-style: solid;
+ border-width:1px;
+ border-radius:7px;
+ border-color: white;
+ max-width: 215px;
+ max-height:20px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

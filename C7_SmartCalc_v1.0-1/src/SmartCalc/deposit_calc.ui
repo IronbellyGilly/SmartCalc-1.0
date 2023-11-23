@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>deposit_calc</class>
+ <widget class="QDialog" name="deposit_calc">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>575</width>
+    <height>320</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Deposit Calculator</string>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>551</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="nalog">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+ background-color:gray;
+ color: white;
+ border-style: solid;
+ border-width:1px;
+ border-radius:7px;
+ border-color: white;
+ max-width: 215px;
+ max-height:20px;
+}</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLineEdit" name="deposits_month">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+ background-color:gray;
+ color: white;
+ border-style: solid;
+ border-width:1px;
+ border-radius:7px;
+ border-color: white;
+ max-width: 215px;
+ max-height:20px;
+}</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>Месяц</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QLineEdit" name="removal_sum">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+ background-color:gray;
+ color: white;
+ border-style: solid;
+ border-width:1px;
+ border-radius:7px;
+ border-color: white;
+ max-width: 215px;
+ max-height:20px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>Сумма</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="sum_deposit">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+ background-color:gray;
+ color: white;
+ border-style: solid;
+ border-width:1px;
+ border-radius:7px;
+ border-color: white;
+ max-width: 215px;
+ max-height:20px;
+}</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Срок размещения:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Процентная ставка(%)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2" colspan="2">
+     <widget class="QCheckBox" name="kapitalization">
+      <property name="text">
+       <string>Капитализация процентов</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QLineEdit" name="deposits_sum">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+ background-color:gray;
+ color: white;
+ border-style: solid;
+ border-width:1px;
+ border-radius:7px;
+ border-color: white;
+ max-width: 215px;
+ max-height:20px;
+}</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>Сумма</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QComboBox" name="period">
+      <item>
+       <property name="text">
+        <string>Каждый день</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Каждую неделю</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Раз в месяц</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="term">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+ background-color:gray;
+ color: white;
+ border-style: solid;
+ border-width:1px;
+ border-radius:7px;
+ border-color: white;
+ max-width: 215px;
+ max-height:20px;
+}</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Налоговая ставка(%):</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>Пополнения:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QLineEdit" name="removal_month">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+ background-color:gray;
+ color: white;
+ border-style: solid;
+ border-width:1px;
+ border-radius:7px;
+ border-color: white;
+ max-width: 215px;
+ max-height:20px;
+}</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>Месяц</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="percent">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+ background-color:gray;
+ color: white;
+ border-style: solid;
+ border-width:1px;
+ border-radius:7px;
+ border-color: white;
+ max-width: 215px;
+ max-height:20px;
+}</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>Периодичность выплат:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Сумма вклада(в рублях):</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>Снятия:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1" colspan="2">
+     <widget class="QPushButton" name="calculate">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+background-color: rgb(98, 97, 98);
+ color: white;;
+ border-radius:10px;
+ max-height:30px;
+ min-height:30px;
+}
+
+QPushButton:pressed {
+    padding-top: 3px;
+    padding-left: 3px;
+    background-color: rgb(65, 65, 66)
+}</string>
+      </property>
+      <property name="text">
+       <string>Рассчитать</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>230</y>
+     <width>411</width>
+     <height>72</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_8">
+      <property name="text">
+       <string>Начисленные проценты:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_10">
+      <property name="text">
+       <string>Сумма на вкладе к концу срока: </string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_9">
+      <property name="text">
+       <string>Сумма налога:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="accrued_percents">
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+ background-color:gray;
+ color: white;
+ border-style: solid;
+ border-width:1px;
+ border-radius:7px;
+ border-color: white;
+ max-width: 215px;
+ max-height:20px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="tax_sum">
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+ background-color:gray;
+ color: white;
+ border-style: solid;
+ border-width:1px;
+ border-radius:7px;
+ border-color: white;
+ max-width: 215px;
+ max-height:20px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLabel" name="sum_in_the_end">
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+ background-color:gray;
+ color: white;
+ border-style: solid;
+ border-width:1px;
+ border-radius:7px;
+ border-color: white;
+ max-width: 215px;
+ max-height:20px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
